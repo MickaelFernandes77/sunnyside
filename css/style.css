@@ -1,0 +1,1217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{list-style-type:none;}
+
+a{text-decoration: none;}
+
+/* esconder scrollbar no: chrome, safari, edge, opera */
+        
+::-webkit-scrollbar {
+    display: none;
+}
+/* esconder scrollbar no: internet explorer*/
+
+body {
+    -ms-overflow-style: none;
+    width: 100%;
+}
+/* esconder scrollbar no: firefox*/
+
+html {
+    scrollbar-width: none;
+}
+
+/* header */
+header{
+    background-color: #33c0f8fb;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+header ul li a{
+    color: #fff;
+    margin-right: 30px;
+    font-family: 'Barlow', sans-serif;
+}
+
+header ul li a:hover{
+    color: #000;
+    transition: 0.15s;
+}
+
+header nav #logo{
+    color: #fff;
+    padding-left: 80px;
+    cursor: pointer;
+}
+
+header nav #logo:hover{
+    text-decoration: none;
+}
+
+header ul li #contato{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 13px;
+    color: #000;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 40px;
+    width: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+header ul li #contato:hover{
+    color: #00c3ff;
+}
+/* Fim menu header */
+
+/* Configuraçãoes das caixas */
+.caixa{
+    background: #33c0f8fb;
+    width: 100%;
+}
+
+.container .row #titulo{
+    text-align: center;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    margin-top: 7%;
+    padding-left: 27%;
+    padding-top: 10%;
+    letter-spacing: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+.container .row .img1{
+    z-index: 1;
+    position: relative;
+}
+/* Fim container header */
+
+.caixa2, .caixa3, .caixa4, .caixa5, .caixa6{
+    width:100%;
+    clear: both;
+}
+
+.caixa2, .caixa3, .caixa5{
+    background: #fff;
+}
+
+.caixa5{
+    height: 550px;
+}
+
+.caixa2 .divTextImg, .caixa3 .divTextImg, .caixa4 .divTextImg{
+    display: flex;
+    width: 100%;
+}
+
+.caixa3 .divTextImg{
+    flex-direction: row-reverse;
+}
+
+.caixa5 .divTextImg{
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+}
+
+.caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv{
+    display: flex;
+    width: 100%;
+}
+
+.caixa6 .divTextImg{
+    width: 100%;
+}
+
+.caixa6 .divTextImg .imgSection{
+    display: flex;
+    width: 100%;
+}
+
+.caixa6 .divTextImg .imgSectionContainer{
+    display: flex;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    background-color: #458c7e;
+}
+/* Fim Configuraçãoes das caixas */
+
+/* Configuraçãoes dos padrões dos textos das caixas */
+.caixa2 .divTextImg h3, .caixa3 .divTextImg h3{
+    color: #000;
+    font-family: 'Fraunces', serif;
+}
+
+.caixa5 .divTextImg h3{
+    color: #999999;
+    font-family: 'Fraunces', serif;
+    clear: both;
+}
+
+.caixa2 .divTextImg p, .caixa3 .divTextImg p, .caixa5 .divTextImg p{
+    color: gray;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px; 
+}
+
+.caixa2 .divTextImg a, .caixa3 .divTextImg a{
+    color: #000;
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+footer div ul{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 0 5%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+}
+/* FIM Configuraçoes dos padrões dos textos das caixas */
+
+/* Configurações dos Textos das caixas */
+.caixa2 .divTextImg .sectionTitle, .caixa3 .divTextImg .sectionTitle{
+    margin-top: 25%;
+    margin-left: 15%;
+    width: 40%;
+}
+
+.caixa4 .divTextImg .sectionTitleDesign, .caixa4 .divTextImg .sectionTitleFoto{
+    font-family: 'Fraunces', serif;
+    position: absolute;
+    z-index: 2;
+}
+
+.caixa4 .divTextImg .sectionTitleDesign{
+    color: #25564b;
+    margin-top: -210px;
+    padding-left: 32%;
+}
+
+.caixa4 .divTextImg .sectionTitleFoto{
+    color: #19536b;
+    margin-top: -200px;
+    padding-left: 40%;
+}
+
+.caixa2 .divTextImg .sectionText, .caixa3 .divTextImg .sectionText{
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+.caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    z-index: 2;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.caixa4 .divTextImg .sectionTextDesign{
+    color: #25564b;
+    padding-left: 26.5%;
+    width: 65%;
+}
+
+.caixa4 .divTextImg .sectionTextFoto{
+    color: #19536b;
+    padding-left: 28%;
+    width: 70%;
+}
+
+.caixa5 .divTextImg .sectionTitleClient{
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-top: 7%;
+}
+
+.caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText{
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(101, 99, 99);
+    width: 100%;
+}
+
+.caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientTextJ{
+    width: 95%;
+}
+
+.caixa5 .divTextImg .sectionClientFeedback .clientDescription{
+     text-align: center;
+     color: #000;
+     font-family: 'Fraunces', serif;
+     font-weight: 600;
+}
+
+.caixa5 .divTextImg .sectionClientFeedback .clientDescription span{
+    color: gray;
+}
+/* FIM Configurações dos Textos das caixas */
+
+/* Configurações dos Botões das caixas */
+.caixa2 .divTextImg .sectionAnchor{
+    border-bottom: #fad400 solid 2px;
+    margin-left: 15%;
+}
+
+.caixa3 .divTextImg .sectionAnchor{
+    border-bottom: #f37b6b solid 2px;
+    margin-left: 15%;
+}
+
+.caixa2 .divTextImg .sectionAnchor:hover{
+    background-color: #fad400;
+    transition: 0.30s;
+    border: none;
+    border-bottom: #fad400 solid 2px;
+}
+
+.caixa3 .divTextImg .sectionAnchor:hover{
+    background-color: #f37b6bf4;
+    color: #fff;
+    border: none;
+    transition: 0.30s;
+}
+/* FIM Configurações dos Botões das caixas */
+
+/* Configuração das Sections das imagens das caixas */
+.caixa2 .divTextImg .sectionImg{
+    background: #fad400;
+}
+
+.caixa3 .divTextImg .sectionImg{
+    background: #f37b6b;
+}
+
+.caixa2 .divTextImg .sectionImg img, .caixa3 .divTextImg .sectionImg img,
+.caixa4 .divTextImg .designSection img, .caixa4 .divTextImg .fotoSection img{
+    width: 100%;
+    height: 100%;
+}
+
+.caixa4 .divTextImg .designSection{
+    background: #95d8cb;
+}
+
+.caixa4 .divTextImg .fotoSection{
+    background: #48c6ecf8
+}
+
+.caixa5 .divTextImg .sectionClientFeedback .clientImg{
+    border-radius: 50%;
+    width: 100px;
+    margin: 15% 0 0 33%;
+    cursor: pointer;
+}
+
+.caixa6 .divTextImg .imgSection img{
+    width: 50%;
+    max-width: 100%;
+}
+
+footer div a img{
+    margin: 5% 0 0 45%;
+    width: 15%;
+}
+
+footer .iconsDiv{
+    width: 100%;
+    display: flex;
+    margin-left: 44%;  
+}
+
+footer .iconsDiv .icons{
+    color: #fff;
+    font-size: 19px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+footer .iconsDiv .icons:hover{
+    color: #19536b;
+    background-color: #fff;
+    transition: 0.35s;
+    border-radius: 10%;
+}
+/* Fim configuração das Sections das imagens das caixas */
+
+@media(min-width: 310px) and (max-width: 375px){
+    /* header */
+    header nav #logo{
+        color: #fff;
+        font-size: 23px;
+        padding-left: 0;
+    }
+
+    #nav-principal{
+        background-color: #fff;
+        height:170px;
+    }
+
+    header ul li a{
+        color: gray;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header ul li #contato{
+        width: 40%;
+        margin: 0 auto;
+        background-color: rgb(233, 233, 3);
+    }
+
+    header ul li #contato:hover{
+    color: #fff;
+    background: #00c3ff;
+    transition: 0.30s;
+    }
+
+    .container .row #titulo{
+        text-align: center;
+        color: #fff;
+        font-family: 'Fraunces', serif;
+        margin-top: 7%;
+        padding-left: 0%;
+        padding-top: 10%;
+        letter-spacing: 5px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .container .row .img1{
+        z-index: 1;
+        position: relative;
+        margin-top: 28%;
+    }
+    /* Fim header */
+
+    /* Configuração das caixas */
+    .caixa2 .divTextImg, .caixa3 .divTextImg{
+        height: 500px;
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .caixa4 .divTextImg{
+        height: 500px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa5{
+        margin-top: 500px;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv div{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .caixa6 .divTextImg .imgSection{
+        margin-top: 790px;
+    }
+
+    .caixa6 .divTextImg .imgSection .imgSectionContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        max-width: 100%;
+
+        background-color: #458c7e;
+    }
+    /* Fim Configuração das caixas */
+
+    /* Configuração dos textos padrão das caixas */
+    .caixa2 .divTextImg h3, .caixa3 .divTextImg h3,
+    .caixa2 .divTextImg p, .caixa3 .divTextImg p,
+    .caixa2 .divTextImg a, .caixa3 .divTextImg a{
+        text-align: center;
+    }
+
+    footer div ul{
+        justify-content: space-around;
+        margin: 2% 0 0 6%;
+    }
+
+    /* Fim Configuração dos textos padrão das caixas */
+    
+    /* Configuração dos textos das caixas */
+    .caixa2 .divTextImg .sectionTitle, .caixa3 .divTextImg .sectionTitle{
+        margin-top: 20%;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .caixa2 .divTextImg .sectionAnchor, .caixa3 .divTextImg .sectionAnchor{
+        margin-top: 10%;
+        margin-left: 31.5%;
+    }
+
+    .caixa4 .divTextImg .sectionTitleDesign{
+        margin-right: 1%;
+        width: 85%;
+        margin-top: -220px;
+    }
+
+    .caixa4 .divTextImg .sectionTitleFoto{
+        padding-left: 25.3%;
+        letter-spacing: 1px;
+        margin-top: -190px;
+    }
+
+    .caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+        width: 80%;
+        margin-top: -150px;
+        padding-left: 15%;
+    }
+
+    .caixa5 .divTextImg .sectionTitleClient{
+        letter-spacing: 7px;
+        font-weight: 600;
+        margin-top: 7%;
+        width: 100%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText,
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientDescription{
+        width: 100%;
+        margin-top:7%;
+        letter-spacing: 2px;
+    }
+    /* Fim Configuração dos textos das caixas */
+
+    /* Configuração das sections das imagens*/
+    .caixa2 .divTextImg .sectionImg, .caixa3 .divTextImg .sectionImg{
+        padding-top: 0%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientImg{
+        margin: 20% 0 0 34%;
+    }
+
+    .caixa6 .divTextImg .imgSection img{
+        width: 100%;
+    }
+
+    footer div a img{
+        margin: 5% 0 0 28%;
+        width: 50%;
+    }
+    
+    footer .iconsDiv{
+        margin-left: 25%;  
+    }
+    /* Fim configurações das imagens das caixas */
+
+}
+
+@media(min-width:375.01px) and (max-width:425px) {
+    /* Header */
+    header nav #logo{
+        color: #fff;
+        font-size: 23px;
+        padding-left: 0;
+    }
+
+    #nav-principal{
+        background-color: #fff;
+        height:170px;
+    }
+
+
+    header ul li a{
+        color: gray;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header ul li #contato{
+        width: 40%;
+        margin: 0 auto;
+        background-color: rgb(233, 233, 3);
+    }
+
+    header ul li #contato:hover{
+    color: #fff;
+    background: #00c3ff;
+    transition: 0.30s;
+    }
+
+    .container .row #titulo{
+        text-align: center;
+        color: #fff;
+        font-family: 'Fraunces', serif;
+        margin-top: 7%;
+        padding-left: 0%;
+        padding-top: 10%;
+        letter-spacing: 5px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .container .row .img1{
+        z-index: 1;
+        position: relative;
+        margin-top: 20%;
+    }
+    /* FIM Header */
+
+    /* Configuração das caixas */
+    .caixa2 .divTextImg, .caixa3 .divTextImg{
+        height: 500px;
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .caixa4 .divTextImg{
+        height: 500px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa5{
+        margin-top: 500px;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv div{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .caixa6 .divTextImg .imgSection{
+        flex-direction: column;
+        margin-top: 790px;
+    }
+    
+    footer{
+        width: 100%;
+        max-width: 100%;
+        background-color: #458c7e;
+    }
+
+    footer div ul{
+        justify-content: space-around;
+        margin: 2% 0 0 6%;
+    }
+    /* FIM Configuração das caixas */
+
+    /* Configuração dos textos padrão das caixas */
+    .caixa2 .divTextImg h3, .caixa3 .divTextImg h3,
+    .caixa2 .divTextImg p, .caixa3 .divTextImg p,
+    .caixa2 .divTextImg a, .caixa3 .divTextImg a{
+        text-align: center;
+    }
+    /* Fim Configuração dos textos padrão das caixas */
+
+    /* Configuração dos textos das caixas */
+    .caixa2 .divTextImg .sectionTitle, .caixa3 .divTextImg .sectionTitle{
+        margin-top: 20%;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .caixa2 .divTextImg .sectionAnchor, .caixa3 .divTextImg .sectionAnchor{
+        margin-top: 10%;
+        margin-left: 33%;
+    }
+
+    .caixa4 .divTextImg .sectionTitleDesign{
+        margin-left: 0%;
+        width: 80%;
+        padding-right: 50%;
+        text-align: center;
+        margin-top: -220px;
+    }
+
+    .caixa4 .divTextImg .sectionTitleFoto{
+        padding-left: 26%;
+        letter-spacing: 2px;
+        margin-top: -190px;
+    }
+
+    .caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+        width: 80%;
+        margin-top: -150px;
+        padding-left: 15%;
+    }
+
+    .caixa5 .divTextImg .sectionTitleClient{
+        letter-spacing: 7px;
+        font-weight: 600;
+        margin-top: 7%;
+        width: 100%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText,
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientDescription{
+        width: 100%;
+        margin-top:7%;
+        letter-spacing: 2px;
+    }
+    /* Fim Configuração dos textos das caixas */
+    .caixa2 .divTextImg .sectionImg, .caixa3 .divTextImg .sectionImg{
+        padding-top: 0%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientImg{
+        margin: 20% 0 0 36%;
+    }
+
+    .caixa6 .divTextImg .imgSection img{
+        width: 50%;
+    }
+
+    footer div a img{
+        margin: 5% 0 0 28%;
+        width: 50%;
+    }
+    
+    footer .iconsDiv{
+        margin-left: 28%;  
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    /* header */
+    header nav #logo{
+        color: #fff;
+        font-size: 23px;
+        padding-left: 0;
+    }
+
+    #nav-principal{
+        background-color: #fff;
+        height:170px;
+    }
+
+    header ul li a{
+        color: gray;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header ul li #contato{
+        width: 40%;
+        margin: 0 auto;
+        background-color: rgb(233, 233, 3);
+    }
+
+    header ul li #contato:hover{
+    color: #fff;
+    background: #00c3ff;
+    transition: 0.30s;
+    }
+
+    .container .row #titulo{
+        text-align: center;
+        color: #fff;
+        font-family: 'Fraunces', serif;
+        margin-top: 7%;
+        padding-left: 0%;
+        padding-top: 10%;
+        letter-spacing: 5px;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .container .row .img1{
+        z-index: 1;
+        position: relative;
+        margin-top: 20%;
+    }
+    /* fim header */
+
+    /* Configuração das caixas */
+    .caixa2 .divTextImg, .caixa3 .divTextImg, .caixa4 .divTextImg{
+        height: 500px;
+        display: flex;
+    }
+
+    .caixa2 .divTextImg, .caixa3 .divTextImg{
+        margin-top: 500px;
+        flex-direction: column-reverse;
+    }
+
+    .caixa4 .divTextImg{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .caixa5{
+        margin-top: 500px;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv div{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .caixa6 .divTextImg .imgSection{
+        flex-direction: column;
+        margin-top: 790px;
+    }
+
+    footer div ul{
+        justify-content: space-around;
+        margin: 2% 0 0 6%;
+    }
+    /* FIM Configuração das caixas */
+
+    /* Configuração dos textos padrões das caixas */
+    .caixa2 .divTextImg h3, .caixa3 .divTextImg h3,
+    .caixa2 .divTextImg p, .caixa3 .divTextImg p,
+    .caixa2 .divTextImg a, .caixa3 .divTextImg a{
+        text-align: center;
+    }
+
+    .caixa4 .divTextImg .designSection, .caixa4 .divTextImg .fotoSection{
+        text-align: center;
+    }
+    /* FIM Configuração dos textos padrões das caixas */
+
+    /* Configuração dos textos das caixas */
+    .caixa2 .divTextImg .sectionTitle, .caixa3 .divTextImg .sectionTitle{
+        margin-top: 20%;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .caixa4 .divTextImg .sectionTitleDesign{
+        margin-top: -200px;
+        padding-right: 25%;
+        width: 90%;
+        letter-spacing: 2px;
+    }
+
+    .caixa4 .divTextImg .sectionTitleFoto{
+        margin-top: -190px;
+        padding-left: 32%;
+        letter-spacing: 2px;
+    }
+
+    .caixa4 .divTextImg .sectionTextDesign{
+        margin-top: -130px;    
+    }
+    
+    .caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+        width: 80%;
+        padding-left: 15%;
+    }
+
+    .caixa4 .divTextImg .sectionTextFoto{
+        margin-top: -150px;
+    }
+
+    .caixa5 .divTextImg .sectionTitleClient{
+        letter-spacing: 7px;
+        font-weight: 600;
+        margin-top: 7%;
+        width: 100%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText,
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientDescription{
+        width: 100%;
+        margin-top:7%;
+        letter-spacing: 2px;
+    }
+    /* Fim Configuração dos textos das caixas */
+
+    /* Configuração dos botões das caixas */ 
+    .caixa2 .divTextImg .sectionAnchor, .caixa3 .divTextImg .sectionAnchor{
+        margin-top: 10%;
+        margin-left: 27%;
+        width: 50%;
+    }
+
+    /* Configuração das sections das imagens das caixas */
+    .caixa2 .divTextImg .sectionImg{
+        padding-top: 0%;
+        width: 100%;
+    }
+
+    .caixa3 .divTextImg .sectionImg{
+        padding-top: 0%;
+        padding-left: 2%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientImg{
+        margin: 20% 0 0 39%;
+    }
+
+    .caixa6 .divTextImg .imgSection img{
+        width: 50%;
+    }
+
+    footer div a img{         
+        margin: 5% 0 0 38%;
+        width: 30%;
+    }
+            
+    footer .iconsDiv{
+        margin-left: 2%;
+        justify-content: center; 
+    }
+
+    footer .iconsDiv .icons{
+        font-size: 21px;
+    }
+    /* Fim Configuração das sections das imagens das caixas */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container .row #titulo{
+        padding-left: 1%;}
+        
+        /* configuração das caixas */
+        .caixa4 .divTextImg{
+            height: 450px;
+        }
+
+        .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv
+        {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv div{
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .caixa6 .divTextImg .imgSection{
+            margin-top: 790px;
+        }
+
+        footer{
+            width: 100%;
+            max-width: 100%;
+            background-color: #458c7e;
+        }
+
+        footer div ul{
+            justify-content: space-around;
+            margin: 2% 0 0 6%;
+        }
+        /* Fim configuração das caixas */
+
+        /* Configuração dos textos padrões das caixas */
+        .caixa2 .divTextImg h3, .caixa3 .divTextImg h3,
+        .caixa2 .divTextImg p, .caixa3 .divTextImg p,
+        .caixa2 .divTextImg a, .caixa3 .divTextImg a{
+            text-align: center;
+        }
+        /* Fim Configuração dos textos padrões das caixas */
+
+        /* Configuração dos textos das caixas */
+        .caixa2 .divTextImg .sectionTitle, .caixa3 .divTextImg .sectionTitle{
+            margin-top: 20%;
+            margin-left: 1%;
+            width: 100%;
+        }
+        
+        .caixa4 .divTextImg .sectionTitleDesign, .caixa4 .divTextImg .sectionTitleFoto{
+            margin-top: -180px;
+            font-size: 23px;
+        }
+
+        .caixa4 .divTextImg .sectionTitleDesign{
+            padding-left: 19.5%;
+        }
+
+        .caixa4 .divTextImg .sectionTitleFoto{
+            padding-left: 26%;
+        }
+    
+        .caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+            width: 100%;
+            margin-top: -140px;
+            padding-left: 0%;
+            padding-right: 10%;
+        }
+
+        .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText,
+        .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientDescription{
+        width: 100%;
+        margin-top:7%;
+        letter-spacing: 2px;
+        }
+        /* Fim Configuração dos textos das caixas */  
+
+        /* Configuração dos botões das caixas */
+        .caixa2 .divTextImg .sectionAnchor, .caixa3 .divTextImg .sectionAnchor{
+            margin: 5% 0 3% 30%;
+        }
+        /* fim Configuração dos botões das caixas */
+
+        /* Configuração das sections das imagens das caixas */
+        .caixa2 .divTextImg .sectionImg, .caixa3 .divTextImg .sectionImg{
+            padding-top: 0%;
+            width: 100%;
+        }
+        /* Fim Configuração das sections das imagens das caixas */
+        
+        /* configurações das imagens das caixas */
+        .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientImg{
+            margin: 20% 0 0 40%;
+        }
+
+        .caixa6 .divTextImg .imgSection img{
+            width: 50%;
+        }
+
+        footer div a img{         
+            margin: 5% 0 0 38%;
+            width: 30%;
+        }
+                
+        footer .iconsDiv{
+            margin-left: 2%;
+            justify-content: center; 
+        }
+    
+        footer .iconsDiv .icons{
+            font-size: 21px;
+        }
+    }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container .row #titulo{
+        padding-left: 15%;
+    }
+    
+    /* configuração das caixas */
+    .caixa4 .divTextImg{
+        height: 450px;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv div{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer div ul{
+        justify-content: space-around;
+        margin: 2% 0 0 6%;
+    }
+
+    footer div a img{         
+        margin: 5% 0 0 40%;
+        width: 25%;
+    }
+    /* fim configuração das caixas */
+
+    /* Configuração dos textos padrões das caixas */
+    .caixa2 .divTextImg h3, .caixa3 .divTextImg h3,
+    .caixa2 .divTextImg p, .caixa3 .divTextImg p,
+    .caixa2 .divTextImg a, .caixa3 .divTextImg a{
+        text-align: center;
+    }
+    /* FIM Configuração dos textos padrões das caixas */
+
+    /* Configuração dos textos das caixas */ 
+    .caixa2 .divTextImg .sectionTitle, .caixa3 .divTextImg .sectionTitle{
+        margin-top: 20%;
+        margin-left: 1%;
+        width: 100%;
+    }
+
+    .caixa4 .divTextImg .sectionTitleDesign, .caixa4 .divTextImg .sectionTitleFoto{
+        margin-top: -170px;
+        font-size: 23px;
+    }
+
+    .caixa4 .divTextImg .sectionTitleDesign{
+        padding-left: 24%;
+    }
+
+    .caixa4 .divTextImg .sectionTitleFoto{
+        padding-left: 31.5%;
+    }
+
+    .caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+        width: 100%;
+        margin-top: -130px;
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText,
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientDescription{
+        width: 100%;
+        margin-top: 5%;
+        letter-spacing: 2px;
+    }
+
+    .caixa6 .divTextImg .imgSection{
+        margin-top: 840px;
+    }
+    /* Fim Configuração dos textos das caixas */ 
+
+    /* Configuração dos botões das caixas */
+    .caixa2 .divTextImg .sectionAnchor, .caixa3 .divTextImg .sectionAnchor{
+        margin: 5% 0 3% 34%;
+    }
+    /* fim Configuração dos botões das caixas */
+
+    /* Configuração das sections das imagens das caixas */
+    .caixa2 .divTextImg .sectionImg, .caixa3 .divTextImg .sectionImg{
+        padding-top: 0%;
+        width: 100%;
+    }
+
+    /* configurações das imagens das caixas */
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientImg{
+        margin: 20% 0 0 43%;
+    }
+
+    .caixa6 .divTextImg .imgSection img{
+        width: 50%;
+    }
+                
+    footer .iconsDiv{
+        margin-left: 3%;
+        justify-content: center; 
+    }
+
+    footer .iconsDiv .icons{
+        font-size: 21px;
+    }
+    /* Fim Configuração das sections das imagens das caixas */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container .row #titulo{
+        padding-left: 22%;
+    }
+
+    footer div ul{
+        justify-content: space-around;
+        margin: 2% 0 0 6%;
+    }
+    /* Configuração dos textos das caixas */ 
+    .caixa4 .divTextImg .sectionTitleDesign, .caixa4 .divTextImg .sectionTitleFoto{
+        margin-top: -160px;
+    }
+
+    .caixa4 .divTextImg .sectionTitleDesign{
+        padding-left: 24%;
+    }
+
+    .caixa4 .divTextImg .sectionTitleFoto{
+        padding-left: 31.5%;
+    }
+
+    .caixa4 .divTextImg .sectionTextDesign, .caixa4 .divTextImg .sectionTextFoto{
+        width: 100%;
+        margin-top: -120px;
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientText,
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientDescription{
+        width: 100%;
+        margin-top: 5%;
+        letter-spacing: 2px;
+    }
+
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientTextT,
+    .caixa5 .divTextImg .sectionClientFeedback .sectionClientFeedbackDiv .clientTextJ{
+        width:89%;
+    }
+    /* Fim Configuração dos textos das caixas */ 
+
+    /* Configuração dos botões das caixas */
+    .caixa2 .divTextImg .sectionAnchor, .caixa3 .divTextImg .sectionAnchor{
+        margin: 2% 0 3% 14%;
+    }
+    /* Fim Configuração dos botões das caixas */
+    footer div a img{         
+        margin: 5% 0 0 42%;
+        width: 20%;
+    }
+
+    footer .iconsDiv{
+        margin-left: 3%;
+        justify-content: center; 
+    }
+
+    footer .iconsDiv .icons{
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1680px) and (max-width: 1900px) {
+    .container .row #titulo{
+        padding-left: 22%;
+    }
+
+    footer div ul{
+        justify-content: space-around;
+        margin: 2% 0 0 2%;
+    }
+
+    footer div a img{         
+        margin: 5% 0 0 42%;
+        width: 20%;
+    }
+    footer .iconsDiv{
+        margin-left: 5%;
+        justify-content: center; 
+    }
+
+    footer .iconsDiv .icons{
+        font-size: 21px;
+        margin-left: 1%;
+    }   
+}
